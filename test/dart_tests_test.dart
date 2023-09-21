@@ -3,11 +3,11 @@ import 'package:test/test.dart';
 
 void main() {
   test('Calcular valor do produto com desconto sem percentual', () {
-    expect(app.calcularDesconto(1000, 150, false), 850);
+    expect(app.calcularDesconto(1000, 150, false), equals(850));
   });
 
   test('Calcular valor do produto com desconto com percentual', () {
-    expect(app.calcularDesconto(1000, 15, true), 850);
+    expect(app.calcularDesconto(1000, 15, true), equals(850));
   });
 
   test('Calcular valor do produto com valor zerado', () {
